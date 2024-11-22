@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <script src="jquery-3.7.1.js"></script> 
+    <script src="wk7-tempConvert.js"></script> 
+</head>
+<body>
+    <h1>Convert Temperature from Fahrenheit to Celsius</h1>
+    <script>
+        var today = new Date();
+        document.write("Today's date: " + today.toDateString());
+    </script>
+    <p>
+    <form id="temp_app" name="temp_app" method="get">
+        <label for="temp">Enter the temperature in Fahrenheit: </label>
+        <input type="text" id="temp">
+        <span id="error_temp"> * </span> <br><br>
+        
+        <label for="result">Temperature in Celsius: </label>
+        <input type="text" id="answer" disabled>
+        <br><br>
+        <input type="button" id="execute" value="Execute Program">
+        <input type="button" id="clear" value="Clear">
+    </form>
+    </p>
+</body>
+</html>
