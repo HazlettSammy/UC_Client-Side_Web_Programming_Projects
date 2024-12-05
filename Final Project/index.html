@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tuxedo Cat Coffee</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+</head>
+<body>
+	<!--Main company logo put at the top of the page-->
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+		<!--Menu Section displaying all of the six options that are served at the store-->
+        <form id="order_form" name="order_form" action="checkout.html" method="get"> <!--Once user hits place order, checkout.html will dsiplay-->
+            <section id="menu">
+                <h2>Menu</h2>
+                <p>Click an item to add it to your order.</p>
+                <ul>
+                    <li><a href="#"><img src="images/espresso.jpg" id="images/espresso_info.jpg" alt="espresso"/></a></li>
+                    <li><a href="#"><img src="images/latte.jpg" id="images/latte_info.jpg" alt="latte"/></a></li>
+                    <li><a href="#"><img src="images/cappuccino.jpg" id="images/cappuccino_info.jpg" alt="cappuccino"/></a></li>
+                    <li><a href="#"><img src="images/coffee.jpg" id="images/coffee_info.jpg" alt="coffee"/></a></li>
+                    <li><a href="#"><img src="images/biscotti.jpg" id="images/biscotti_info.jpg" alt="biscotti"/></a></li>
+                    <li><a href="#"><img src="images/scone.jpg" id="images/scone_info.jpg" alt="scone"/></a></li>
+                </ul>
+            </section>
+<!--Order section with buttons, mostly handled by jQuery & Javascript-->
+            <section>
+                <h2>Your Order</h2>
+                <section>
+                    <select id="order" name="order" size="6"></select>
+                    <p id="total"></p>                   
+                </section>
+                <section id="buttons">
+                    <input type="button" name="place_order" id="place_order" value="Place Order">
+                    <input type="button" name="clear_order" id="clear_order" value="Clear Order">                                
+                </section>
+            </section>   
+        </form>
+    </main> 
+
+    <!-- jQuery & Javascript file -->
+    <script src="jquery.js"></script>
+    <script src="cafe.js"></script>
+</body>
+</html>
