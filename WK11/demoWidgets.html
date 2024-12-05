@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Demo Widgets - Updated</title>
+	<!-- Updated CSS Theme for Widgets -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/sunny/jquery-ui.css">
+	<!-- Your CSS file -->
+	<link rel="stylesheet" href="demos.css">
+	<style>
+		#slider {
+			width: 200px;
+			margin: 20px 0;
+		}
+		#tabs ul {
+			background-color: #ffdd88;
+		}
+		#dialog label {
+			display: inline-block;
+			width: 100px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div id="dateSlider">
+		<form>
+			<p>Date From: <input type="text" id="datepickerfrom" placeholder="Pick a date"></p>
+			<p>Date To: <input type="text" id="datepickerto" placeholder="Pick a date"></p>
+
+			<p>Selected Value: <span id="sliderVal">0</span></p>
+			<div id="slider"></div>
+		</form>
+	</div>
+
+	<div id="dialog" title="Form Dialog" style="display: none;">
+		<form>
+			<fieldset>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" /><br>
+				
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" class="text ui-widget-content ui-corner-all" /><br>
+				
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" class="text ui-widget-content ui-corner-all" />
+			</fieldset>
+		</form>
+	</div>
+	<input type="button" id="quickView" value="Open Form Dialog">
+
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">Overview</a></li>
+			<li><a href="#tabs-2">Details</a></li>
+			<li><a href="#tabs-3">Settings</a></li>
+		</ul>
+		<div id="tabs-1"><p>Welcome to the updated widget demo!</p></div>
+		<div id="tabs-2"><p>Explore the enhanced features and styling.</p></div>
+		<div id="tabs-3"><p>Customize your experience.</p></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+	<script src="demoWidgets.js"></script>
+</body>
+</html>
